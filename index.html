@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<style>
+
+</style>
+<body>
+<div class="blur">
+    <div class="options-box">
+        <div>
+            <label for="rounds">Liczba rund:</label><br>
+            <input type="number" id="rounds" name="rounds" value="16" min="1" max="99">
+        </div>
+
+        <div>
+            <p>Płeć:</p>
+            <select name="sex" id="sex">
+                <option value="m">Chłopiec</option>
+                <option value="w">Dziewczynka</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="id">Identyfikator:</label>
+            <input type="text" id="id" name="id" value="1">
+        </div>
+
+        <div>
+            <p>Ikona gracza:</p>
+            <select name="icon" id="icon">
+                <option value="o">Kółko</option>
+                <option value="x">Krzyżyk</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Grupa:</p>
+            <select name="group" id="group">
+                <option value="kontrolna">Kontrolna</option>
+                <option value="atakujaca">Atakująca</option>
+                <option value="blokujaca">Blokująca</option>
+            </select>
+        </div>
+
+        <div style="align-self: center">
+            <button id="start-button">Start</button>
+        </div>
+
+    </div>
+</div>
+<h1 id="round-counter">Runda: testowa</h1>
+<div class="nie-wiem">
+    <div class="board-container">
+        <div class="stick left"></div>
+        <div class="stick right"></div>
+        <div class="stick horizontal top"></div>
+        <div class="stick horizontal bottom"></div>
+        <div class="board">
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+            <div class="field"></div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/common.js"></script>
+<script src="scripts/game.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>

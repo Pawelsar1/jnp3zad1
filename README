@@ -1,0 +1,15 @@
+Aby rozpocząć badanie należy otworzyć w przeglądarce plik index.html (czyli dwukrotnie kliknąć myszką).
+Najlepiej żeby przeglądarką był Google Chrome i najpewniej działa dla wszystkich
+przeglądarek lub nowszych wymienionych tutaj:
+https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio
+Aby komputer wykonał swój ruch należy wcisnąć Enter. Po końcu rundy też
+trzeba wcisnąć Enter aby przejść dalej.
+Po zagraniu wpisanej ilości rund automatycznie pobierze się plik csv z wynikami.
+W celu restartu programu należy odświeżyć stronę.
+Aby powiększyć okno na cały ekran należy użyć skrótu klawiszowego
+(np. u mnie na macu to Shift+Cmd+F, na windowsie pewnie będzie to Shift+Ctrl+F).
+Ten sam skrót użyty ponownie przywróci normalny widok.
+Nie potrzebny jest dostęp do Internetu.
+Czad podany jest w milisekundach i zaczyna być odmierzany od momentu zniknięcia
+blura z ekranu (czyli w przypadku rundy testowej od wciśnięcia przycisku w
+startowym formularzu, a w pozostałych po wciśnięciu Enter).

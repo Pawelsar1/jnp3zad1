@@ -1,0 +1,178 @@
+:root {
+    --gap: 10px;
+    --board-field-size: 22vh;
+    --cross-stick-width: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nie-wiem {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board-container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+}
+
+.stick {
+    position: absolute;
+    height: 100%;
+    width: var(--gap);
+    background-color: gray;
+    z-index: 1;
+}
+
+.stick.left {
+    left: var(--board-field-size)
+}
+
+.stick.right {
+    left: calc(2 * var(--board-field-size) + var(--gap));
+}
+
+.horizontal {
+    width: 100%;
+    height: var(--gap);
+}
+
+.horizontal.top {
+    top: var(--board-field-size);
+}
+
+.horizontal.bottom {
+    top: calc(2 * var(--board-field-size) + var(--gap));
+}
+
+.board {
+    display: flex;
+    width: calc(var(--board-field-size) * 3 + 2 * var(--gap));
+    gap: var(--gap);
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--board-field-size);
+    aspect-ratio: 1;
+}
+
+.circle {
+    height: 70%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 10px solid blue;
+    box-sizing: border-box;
+}
+
+.cross-container {
+    position: relative;
+    width: 70%;
+    aspect-ratio: 1;
+    transform: rotate(45deg) scale(1.05);
+}
+
+.cross-container > .vertical {
+    position: absolute;
+    left: calc(50% - 0.5 * var(--cross-stick-width));
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+}
+
+.cross-container > .horizontal {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: calc(50% - 0.5 * var(--cross-stick-width));
+    background-color: red;
+}
+
+.animated .horizontal, .animated .vertical {
+    background-color: green;
+}
+
+.animated .circle {
+    border-color: green;
+}
+
+.blur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.options-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: #cbcccd;
+    padding: 20px;
+
+}
+
+.options-box label {
+    font-size: 20px;
+}
+
+.options-box p {
+    font-size: 20px;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+input[type=text], input[type=number] {
+    height: 25px;
+    width: 100%;
+}
+
+input[type=radio] {
+    margin: 0;
+    font: inherit;
+    width: 0.8em;
+    height: 0.8em;
+}
+
+
+input[type=radio] + label {
+    margin-right: 20px;
+    font-size: 15px;
+}
+
+p + input[type=radio] {
+    margin-top: 10px;
+}
+
+#start-button {
+    height: 40px;
+    width: 150px;
+}
+
+#round-counter {
+    position: absolute;
+    margin-left: 20px;
+}
+
+#sex, #icon, #group {
+    margin-top: 5px;
+    width: 100%;
+    height: 31px;
+}
